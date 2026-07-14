@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://unipathkk.github.io/unipath-hp/sitemap.xml
