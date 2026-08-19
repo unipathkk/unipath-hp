@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>教育支援コース｜個性別学習塾ユニパス（八戸市沼館）</title>
 <meta name="description" content="八戸市沼館の個性別学習塾ユニパスは、経済的な理由で通塾が難しいご家庭に向けた教育支援コースをご用意しています。月4回・80分5,000円〜、就学援助や児童扶養手当をご利用のご家庭なども対象。授業の質は通常コースと変わりません。">
-<meta name="keywords" content="八戸市,塾,個別指導,教育支援,就学援助,学習支援,小学生,中学生">
+<meta name="keywords" content="八戸市,塾,個性別学習,教育支援,就学援助,学習支援,小学生,中学生">
 <meta property="og:type" content="website">
 <meta property="og:title" content="教育支援コース｜個性別学習塾ユニパス">
 <meta property="og:description" content="経済的な理由で、塾に通うことを諦めてほしくない。ユニパスの教育支援コースは月4回・80分5,000円〜。就学援助や児童扶養手当をご利用のご家庭なども対象です。">
@@ -15,21 +15,36 @@
 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="has-fixed-cta">
 
-<header class="hero">
+<header class="site-header">
   <div class="brand-bar">
-    <div class="brand-mark">
+    <a class="brand-mark" href="index.html">
       <svg class="brand-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M6 14L24 6l18 8-18 8-18-8Z" fill="#fff" opacity="0.9"/>
         <path d="M13 19v9c0 3 5 6 11 6s11-3 11-6v-9" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
         <path d="M40 17v10" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
       </svg>
-      <div class="brand-text">
+      <span class="brand-text">
         <span class="brand-sub">個性別学習塾</span>
         <span class="brand-main">ユニパス</span>
-      </div>
-    </div>
+      </span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="siteNav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="siteNav">
+      <ul class="nav-list">
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="about/">ユニパスについて</a></li>
+        <li><a href="course/individual/">個性別学習コース</a></li>
+        <li><a href="course/science/">科学探究コース</a></li>
+        <li><a href="price/">料金</a></li>
+        <li><a href="access/">アクセス</a></li>
+        <li><a href="support.html" aria-current="page">教育支援コース</a></li>
+        <li><a href="contact/" class="nav-cta">お問い合わせ</a></li>
+      </ul>
+    </nav>
   </div>
   <svg class="brand-wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
     <path d="M0,0 C480,60 960,60 1440,0 L1440,60 L0,60 Z" fill="var(--blue)"></path>
@@ -65,7 +80,7 @@
 
 <section class="section price">
   <h2 class="section-title">教育支援コースとは？</h2>
-  <p class="lead">八戸市の学習支援・個別指導として、無理のない料金で通っていただけます。</p>
+  <p class="lead">八戸市の学習支援・個性別学習として、無理のない料金で通っていただけます。</p>
   <div class="support-price-wrap">
     <div class="support-price-card">
       <p class="price-eyebrow">教育支援コース（月4回・1回80分）</p>
@@ -265,5 +280,11 @@
   <p>&copy; 個性別学習塾ユニパス</p>
 </footer>
 
+<div class="mobile-fixed-cta">
+  <a class="fixed-cta-trial" href="contact/">無料体験</a>
+  <a class="fixed-cta-contact" href="contact/">お問い合わせ</a>
+</div>
+
+<script src="assets/js/nav.js"></script>
 </body>
 </html>
