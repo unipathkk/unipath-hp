@@ -855,6 +855,18 @@ body.has-fixed-cta { padding-bottom: 66px; }
 .page-hero.theme-green h1 { color: var(--green-dark); }
 .page-hero .page-lead { max-width: 640px; margin: 0 auto; color: #555; text-align: center; }
 
+.enrollment-notice {
+  display: inline-block;
+  margin-top: 14px;
+  background: var(--blue-light);
+  color: var(--blue-dark);
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.page-hero.theme-green .enrollment-notice { background: var(--green-light); color: var(--green-dark); }
+
 /* ---------- Section theme variants ---------- */
 .section.theme-green .section-title { color: var(--green-dark); }
 .section.theme-green .section-title::before,
