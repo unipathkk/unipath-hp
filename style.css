@@ -786,7 +786,8 @@ body.has-fixed-cta { padding-bottom: 66px; }
 }
 .site-nav .nav-list a.nav-cta:hover { background: #ffd766; }
 
-@media (max-width: 900px) {
+/* メニュー項目が横1列に収まらない幅（〜1199px）はハンバーガーメニューに切り替え */
+@media (max-width: 1199px) {
   .nav-toggle { display: flex; }
   .site-nav {
     position: fixed;
@@ -1261,3 +1262,260 @@ body.has-fixed-cta { padding-bottom: 66px; }
   .cta-band h2 { font-size: 1.3rem; }
   .compare-grid, .price-grid { grid-template-columns: 1fr; }
 }
+
+/* =========================================================
+   オンライン個別指導ページ（course/online/）
+   既存の配色・カード・影をそのまま使い、足りない部品だけ追加
+   ========================================================= */
+.sp-only { display: none; }
+@media (max-width: 500px) { .sp-only { display: inline; } }
+.section-bg-blue { background: var(--blue-light); }
+.section-bg-blue.section { max-width: none; }
+.section-bg-blue > * { max-width: 860px; margin-left: auto; margin-right: auto; }
+.section-bg-blue > .section-title { margin-bottom: 40px; }
+
+/* ファーストビュー */
+.online-tags {
+  list-style: none;
+  padding: 0;
+  margin: 22px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+.online-tags li {
+  background: #fff;
+  border: 2px solid var(--blue);
+  color: var(--blue-dark);
+  font-family: var(--font-heading);
+  font-weight: bold;
+  font-size: 0.92rem;
+  padding: 6px 16px;
+  border-radius: 30px;
+}
+.online-hero .hero-cta-row { margin-top: 24px; }
+.online-hero .hero-cta-row .btn { margin-top: 0; }
+.online-form-note { margin: 12px auto 0; font-size: 0.8rem; color: #777; text-align: center; }
+.online-form-note a { color: var(--blue-dark); }
+
+/* こんなお子さんに */
+.worry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 18px;
+  text-align: left;
+}
+.worry-card {
+  background: #fff;
+  border-radius: 14px;
+  border-top: 4px solid var(--blue);
+  padding: 20px 20px 16px;
+  box-shadow: 0 8px 20px rgba(44,90,138,0.08);
+}
+.worry-card h3 { color: var(--blue-dark); font-size: 1.02rem; margin-bottom: 10px; }
+.worry-card ul { list-style: none; margin: 0; padding: 0; }
+.worry-card li {
+  position: relative;
+  padding: 6px 0 6px 24px;
+  font-size: 0.9rem;
+  border-bottom: 1px dashed #e2ebf5;
+}
+.worry-card li:last-child { border-bottom: none; }
+.worry-card li::before {
+  content: "";
+  position: absolute;
+  left: 4px; top: 0.95em;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--blue);
+  opacity: 0.5;
+}
+
+/* オンライン個別指導とは */
+.online-lead-big { font-family: var(--font-heading); font-size: 1.35rem; color: var(--blue-dark); margin: 0 auto 10px; }
+.online-page .section p.lead,
+.online-page .section p.text-center { text-align: center; }
+.online-point-grid {
+  list-style: none;
+  padding: 0;
+  margin: 30px auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+.online-point-grid li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-weight: 500;
+  font-size: 0.93rem;
+  box-shadow: 0 6px 16px rgba(44,90,138,0.08);
+}
+.op-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+  color: #fff;
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+
+/* 大切にしていること（教えてもらうだけで終わらない） */
+.value-compare {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 14px;
+  max-width: 680px;
+  margin: 0 auto;
+}
+.value-box {
+  flex: 1;
+  border-radius: 14px;
+  padding: 18px 16px;
+  text-align: center;
+}
+.value-box p { margin: 0; text-align: center; font-family: var(--font-heading); font-weight: bold; font-size: 1.05rem; }
+.value-label { display: block; font-size: 0.78rem; margin-bottom: 6px; opacity: 0.85; }
+.value-from { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.35); color: #fff; }
+.value-to { background: #fff; color: var(--blue-dark); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+.value-to .value-label { color: var(--blue); opacity: 1; font-weight: bold; }
+.value-arrow { align-self: center; color: var(--yellow); font-size: 2.4rem; font-weight: bold; line-height: 1; }
+.quality-band .value-text { color: #fff; max-width: 680px; margin: 28px auto 0; font-size: 0.95rem; text-align: center; }
+
+/* 授業の流れ／受講開始までの流れ（見出しをh3で使う場合） */
+.flow-list h3 { color: var(--blue-dark); margin-bottom: 6px; font-size: 1.05rem; }
+
+/* 授業後の振り返り：授業 → 振り返り → 次の学習 */
+.cycle-flow {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1fr;
+  gap: 30px;
+  margin-top: 36px;
+  align-items: center;
+}
+.cycle-item {
+  position: relative;
+  background: #fff;
+  border: 2px solid var(--blue-light);
+  border-radius: 16px;
+  padding: 22px 16px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(44,90,138,0.08);
+}
+.cycle-item::after {
+  content: "";
+  position: absolute;
+  right: -22px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-style: solid;
+  border-width: 8px 0 8px 12px;
+  border-color: transparent transparent transparent var(--blue);
+}
+.cycle-item:last-child::after { display: none; }
+.cycle-step {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 1.1rem;
+  color: var(--blue-dark);
+  margin-bottom: 8px;
+}
+.cycle-item p { margin: 0; font-size: 0.88rem; text-align: center; color: #555; }
+.cycle-main { border-color: var(--blue); background: var(--blue-light); }
+.cycle-main ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.cycle-main li {
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* オンライン授業のメリット */
+.merit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  text-align: left;
+}
+.merit-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px 18px;
+  box-shadow: 0 6px 16px rgba(44,90,138,0.08);
+}
+.merit-item h3 { color: var(--blue-dark); font-size: 1rem; margin-bottom: 4px; }
+.merit-item p { margin: 0; font-size: 0.88rem; color: #555; }
+
+/* 保護者の方への共有 */
+.report-list {
+  list-style: none;
+  padding: 0;
+  margin: 24px auto 0;
+  max-width: 560px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.report-list li {
+  background: var(--blue-light);
+  color: var(--blue-dark);
+  border-radius: 10px;
+  padding: 12px 10px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* 最後のCTA */
+.online-final .voice-list li { text-align: center; }
+.online-final .hero-cta-row .btn { margin-top: 0; }
+
+@media (max-width: 700px) {
+  .online-lead-big { font-size: 1.15rem; }
+  .value-compare { flex-direction: column; }
+  .value-arrow { transform: rotate(90deg); font-size: 2rem; }
+  .cycle-flow { grid-template-columns: 1fr; gap: 34px; }
+  .report-list { grid-template-columns: 1fr; }
+  .cycle-item::after {
+    right: auto; left: 50%; top: auto; bottom: -26px;
+    transform: translateX(-50%) rotate(90deg);
+  }
+}
+
+/* ---------- トップ：コース紹介カード（3枚並び・オンライン個別指導のアイコン枠） ---------- */
+.course-preview-grid-3 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 22px; }
+.course-preview-grid-3 .course-preview-card h3 { font-size: 1.12rem; }
+.course-preview-grid-3 .course-preview-card .cpc-body { padding: 20px 20px 24px; }
+.course-preview-card .cpc-image-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--blue-light), #fff);
+  color: var(--blue);
+}
+.course-preview-card .cpc-image-icon svg { width: 72px; height: 72px; }
+.course-preview-card .cpc-image-icon span {
+  font-family: var(--font-heading);
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: var(--blue-dark);
+}
+/* トップ：コース比較（3枚並び） */
+.compare-grid-3 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.compare-grid-3 .compare-card { padding: 24px 20px; }
+.compare-grid-3 .compare-card h3 { font-size: 1.08rem; }
