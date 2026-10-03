@@ -786,8 +786,8 @@ body.has-fixed-cta { padding-bottom: 66px; }
 }
 .site-nav .nav-list a.nav-cta:hover { background: #ffd766; }
 
-/* メニュー項目が横1列に収まらない幅（〜1199px）はハンバーガーメニューに切り替え */
-@media (max-width: 1199px) {
+/* メニュー項目が横1列に収まらない幅（〜1299px）はハンバーガーメニューに切り替え */
+@media (max-width: 1299px) {
   .nav-toggle { display: flex; }
   .site-nav {
     position: fixed;
@@ -1545,4 +1545,90 @@ body.has-fixed-cta { padding-bottom: 66px; }
 @media (max-width: 900px) { .online-science { border-radius: 0; } }
 @media (max-width: 500px) {
   .online-science .section-title::before, .online-science .section-title::after { display: none; }
+}
+
+/* ---------- トップ：ファーストビューの地域・サービス表記 ---------- */
+.hero-area {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--blue);
+  letter-spacing: 0.05em;
+}
+.hero-sub strong { color: var(--blue-dark); font-size: 1.05rem; }
+.concept-highlight .concept-subtitle { margin-top: 36px; }
+@media (max-width: 700px) {
+  .hero-area { font-size: 0.82rem; }
+  .hero-sub { font-size: 0.92rem; }
+}
+
+/* ---------- トップ：ユニパスの指導 ---------- */
+.guidance-list { grid-template-columns: repeat(2, 1fr); margin-top: 28px; }
+.guidance-list h3 { font-size: 1rem; color: var(--blue-dark); line-height: 1.5; margin-bottom: 4px; }
+.guidance-list p { margin: 0; font-size: 0.88rem; color: #555; }
+.section-more { margin-top: 30px; }
+.section-more-link { margin-top: 14px; font-size: 0.92rem; }
+.section-more-link a { color: var(--blue-dark); font-weight: bold; }
+@media (max-width: 700px) {
+  .guidance-list { grid-template-columns: 1fr; }
+}
+
+/* ---------- 塾長紹介ページ ---------- */
+.profile-card {
+  max-width: 640px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 26px 24px;
+  box-shadow: 0 8px 24px rgba(44,90,138,0.1);
+}
+.section .profile-card .profile-role {
+  margin: 0 0 16px;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-weight: bold;
+  font-size: 1.15rem;
+  color: var(--blue-dark);
+}
+.profile-list { display: grid; grid-template-columns: 6em 1fr; margin: 0; text-align: left; }
+.profile-list dt,
+.profile-list dd { margin: 0; padding: 12px 4px; border-top: 1px solid #eaf0f7; }
+.profile-list dt { font-weight: bold; color: var(--blue-dark); font-size: 0.9rem; }
+.profile-list dd { font-size: 0.95rem; }
+.jukucho-text > p { max-width: 680px; margin-left: auto; margin-right: auto; }
+.jukucho-page .feature { text-align: left; padding: 22px 20px; }
+.jukucho-page .feature h3 { margin: 0 0 8px; color: var(--blue-dark); font-size: 1.05rem; }
+.jukucho-page .feature-grid { margin-top: 0; }
+.jukucho-page .target-list { max-width: 640px; margin: 28px auto 0; }
+
+.link-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+.link-grid a {
+  display: block;
+  height: 100%;
+  padding: 16px 18px;
+  border-radius: 12px;
+  border: 2px solid var(--blue-light);
+  background: #fff;
+  text-decoration: none;
+  transition: border-color 0.15s ease;
+}
+.link-grid a:hover { border-color: var(--blue); }
+.link-grid .link-title {
+  display: block;
+  font-family: var(--font-heading);
+  font-weight: bold;
+  color: var(--blue-dark);
+}
+.link-grid .link-title::after { content: " ›"; }
+.link-grid .link-desc { display: block; font-size: 0.85rem; color: #666; }
+@media (max-width: 700px) {
+  .profile-list { grid-template-columns: 5em 1fr; }
 }
