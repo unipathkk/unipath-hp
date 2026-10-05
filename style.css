@@ -1202,6 +1202,36 @@ body.has-fixed-cta { padding-bottom: 66px; }
 }
 .compare-guide strong { color: var(--blue-dark); }
 
+/* ---------- 保護者の声（トップページ） ---------- */
+.parent-voice-list {
+  display: grid;
+  gap: 24px;
+  margin-top: 36px;
+  text-align: left;
+}
+.parent-voice-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 26px 26px 22px;
+  box-shadow: 0 8px 22px rgba(44,90,138,0.1);
+  border-left: 6px solid var(--blue);
+}
+.parent-voice-card.theme-pink { border-left-color: var(--pink); }
+.pv-meta { margin: 0 0 8px; font-size: 0.85rem; color: #777; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.pv-tag { background: var(--blue-light); color: var(--blue-dark); font-weight: bold; border-radius: 999px; padding: 2px 12px; font-size: 0.78rem; }
+.theme-pink .pv-tag { background: var(--pink-light); color: #b4557a; }
+.pv-catch { font-family: var(--font-heading); color: var(--blue-dark); font-size: 1.12rem; line-height: 1.6; margin: 0 0 14px; }
+.theme-pink .pv-catch { color: #b4557a; }
+.pv-qa { margin: 0; font-size: 0.9rem; color: #555; }
+.pv-qa dt { font-weight: bold; color: var(--blue-dark); margin-top: 14px; }
+.pv-qa dt::before { content: "■ "; color: var(--blue); }
+.pv-qa dd { margin: 4px 0 0; line-height: 1.85; }
+.pv-body { margin: 0; font-size: 0.9rem; color: #555; line-height: 1.85; }
+@media (max-width: 700px) {
+  .parent-voice-card { padding: 22px 18px 18px; }
+  .pv-catch { font-size: 1.02rem; }
+}
+
 /* ---------- Price cards（料金ページ） ---------- */
 .price-grid {
   display: grid;
