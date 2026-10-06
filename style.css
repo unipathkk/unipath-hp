@@ -209,7 +209,7 @@ h1, h2, h3, h4 { margin: 0; font-family: var(--font-heading); }
   box-shadow: 0 8px 20px rgba(44,90,138,0.08);
 }
 .feature img { width: 100%; height: 160px; object-fit: cover; border-radius: 10px; display: block; }
-.feature h4 { margin: 14px 0 8px; color: var(--blue-dark); font-size: 1.05rem; }
+.feature h3 { margin: 14px 0 8px; color: var(--blue-dark); font-size: 1.05rem; }
 .feature p { font-size: 0.9rem; }
 
 /* ---------- Gallery ---------- */
@@ -279,7 +279,7 @@ thead th { background: var(--blue); color: #fff; font-weight: 500; }
   font-weight: bold;
   font-family: var(--font-heading);
 }
-.flow-list h4 { color: var(--blue-dark); margin-bottom: 6px; }
+.flow-list h3 { color: var(--blue-dark); margin-bottom: 6px; }
 .flow-list p { margin: 0; font-size: 0.9rem; }
 
 /* ---------- Campaign ---------- */
@@ -298,8 +298,8 @@ thead th { background: var(--blue); color: #fff; font-weight: 500; }
   background: #fff;
   box-shadow: 0 8px 20px rgba(201,89,138,0.1);
 }
-.campaign-item h4 { color: #c9598a; margin-bottom: 8px; font-size: 1rem; }
-.campaign-item h4 span { display: block; font-size: 0.78rem; font-weight: normal; color: #999; margin-top: 4px; }
+.campaign-item h3 { color: #c9598a; margin-bottom: 8px; font-size: 1rem; }
+.campaign-item h3 span { display: block; font-size: 0.78rem; font-weight: normal; color: #999; margin-top: 4px; }
 .campaign-item p { margin: 0; font-size: 0.9rem; }
 
 /* ---------- Access ---------- */
@@ -418,7 +418,7 @@ footer {
   font-size: 1.1rem;
   box-shadow: 0 4px 10px rgba(44,90,138,0.3);
 }
-.reason h4 { color: var(--blue-dark); margin-bottom: 8px; font-size: 1.05rem; }
+.reason h3 { color: var(--blue-dark); margin-bottom: 8px; font-size: 1.05rem; }
 .reason p { font-size: 0.9rem; }
 
 .summer-schedule { background: #fafcff; }
@@ -435,7 +435,7 @@ footer {
   padding: 24px;
   box-shadow: 0 8px 20px rgba(44,90,138,0.08);
 }
-.schedule-table h4, .schedule-price h4 { color: var(--blue-dark); margin-bottom: 14px; }
+.schedule-table h3, .schedule-price h3 { color: var(--blue-dark); margin-bottom: 14px; font-size: 1rem; }
 .schedule-table ul { list-style: none; padding: 0; margin: 0; }
 .schedule-table li {
   padding: 10px 0;
@@ -786,8 +786,8 @@ body.has-fixed-cta { padding-bottom: 66px; }
 }
 .site-nav .nav-list a.nav-cta:hover { background: #ffd766; }
 
-/* メニュー項目が横1列に収まらない幅（〜1299px）はハンバーガーメニューに切り替え */
-@media (max-width: 1299px) {
+/* メニュー項目が横1列に収まらない幅（〜1499px）はハンバーガーメニューに切り替え */
+@media (max-width: 1499px) {
   .nav-toggle { display: flex; }
   .site-nav {
     position: fixed;
@@ -1042,7 +1042,7 @@ body.has-fixed-cta { padding-bottom: 66px; }
   margin-bottom: 10px;
 }
 .step-flow .step-icon { font-size: 2rem; display: block; margin-bottom: 6px; }
-.step-flow h4 { color: var(--green-dark); font-size: 1.05rem; margin-bottom: 6px; }
+.step-flow h3 { color: var(--green-dark); font-size: 1.05rem; margin-bottom: 6px; }
 .step-flow .step-quote { font-size: 0.82rem; color: #777; margin: 0 0 6px; }
 .step-flow p.step-desc { font-size: 0.86rem; margin: 0; }
 
@@ -1079,7 +1079,7 @@ body.has-fixed-cta { padding-bottom: 66px; }
   font-size: 2.6rem;
 }
 .exp-card .exp-body { padding: 12px 14px 16px; }
-.exp-card h4 { color: var(--green-dark); font-size: 0.92rem; margin-bottom: 4px; }
+.exp-card h3 { color: var(--green-dark); font-size: 0.92rem; margin-bottom: 4px; }
 .exp-card p { font-size: 0.8rem; color: #666; margin: 0; line-height: 1.5; }
 
 /* ---------- Power grid（育てたい力） ---------- */
@@ -1097,7 +1097,7 @@ body.has-fixed-cta { padding-bottom: 66px; }
   box-shadow: 0 8px 20px rgba(47,138,95,0.1);
 }
 .power-item .power-icon { font-size: 2.2rem; display: block; margin-bottom: 10px; }
-.power-item h4 { color: var(--green-dark); font-size: 1rem; margin-bottom: 6px; }
+.power-item h3 { color: var(--green-dark); font-size: 1rem; margin-bottom: 6px; }
 .power-item p { font-size: 0.85rem; color: #666; margin: 0; }
 .power-item p + p { margin-top: 6px; }
 
@@ -1627,9 +1627,9 @@ body.has-fixed-cta { padding-bottom: 66px; }
 .profile-list dt { font-weight: bold; color: var(--blue-dark); font-size: 0.9rem; }
 .profile-list dd { font-size: 0.95rem; }
 .jukucho-text > p { max-width: 680px; margin-left: auto; margin-right: auto; }
-.jukucho-page .feature { text-align: left; padding: 22px 20px; }
-.jukucho-page .feature h3 { margin: 0 0 8px; color: var(--blue-dark); font-size: 1.05rem; }
-.jukucho-page .feature-grid { margin-top: 0; }
+.jukucho-page .feature, .feature-text .feature { text-align: left; padding: 22px 20px; }
+.jukucho-page .feature h3, .feature-text .feature h3 { margin: 0 0 8px; color: var(--blue-dark); font-size: 1.05rem; }
+.jukucho-page .feature-grid, .feature-grid.feature-text { margin-top: 0; }
 .jukucho-page .target-list { max-width: 640px; margin: 28px auto 0; }
 
 .link-grid {
@@ -1662,3 +1662,82 @@ body.has-fixed-cta { padding-bottom: 66px; }
 @media (max-width: 700px) {
   .profile-list { grid-template-columns: 5em 1fr; }
 }
+
+/* ---------- SEO改善（2026-10）で追加 ---------- */
+/* トップ：H1（検索向けの説明）の下に置くブランドメッセージ。見た目は従来のH1と同じ */
+.hero-brand {
+  font-family: var(--font-heading);
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: var(--blue-dark);
+  line-height: 1.6;
+  margin: 0;
+}
+.hero-text h1.hero-h1 { font-size: inherit; line-height: 1.5; margin: 0; }
+@media (max-width: 700px) {
+  .hero-brand { font-size: 1.3rem; }
+}
+
+/* サブページH1：内容が分かる小見出し＋従来のキャッチコピー */
+.h1-label {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--blue);
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+.page-hero.theme-green .h1-label { color: var(--green); }
+
+/* 文章中心のセクション（専用ページ・コラム） */
+.prose { max-width: 720px; margin-left: auto; margin-right: auto; }
+.prose h3 { text-align: left; color: var(--blue-dark); font-size: 1.1rem; margin: 28px 0 8px; }
+.prose ul, .prose ol { padding-left: 1.4em; }
+.prose li { margin-bottom: 6px; }
+.section .text-link { text-align: center; margin-top: 22px; }
+.text-link a { color: var(--blue-dark); font-weight: bold; }
+
+/* コラム */
+.column-list { list-style: none; padding: 0; margin: 0 auto; max-width: 720px; display: grid; gap: 14px; }
+.column-list a {
+  display: block;
+  padding: 18px 20px;
+  border-radius: 12px;
+  border: 2px solid var(--blue-light);
+  background: #fff;
+  text-decoration: none;
+  color: var(--text);
+}
+.column-list a:hover { border-color: var(--blue); }
+.column-list .column-title { display: block; font-family: var(--font-heading); font-weight: bold; color: var(--blue-dark); font-size: 1.05rem; }
+.column-list .column-desc { display: block; font-size: 0.88rem; color: #666; margin-top: 4px; }
+.article-meta { text-align: center; font-size: 0.85rem; color: #777; margin-top: 10px; }
+.article-body { max-width: 720px; margin: 0 auto; padding: 50px 20px 20px; }
+.article-body h2 {
+  font-size: 1.35rem;
+  color: var(--blue-dark);
+  border-left: 6px solid var(--blue);
+  padding: 4px 0 4px 12px;
+  margin: 44px 0 16px;
+  line-height: 1.5;
+}
+.article-body h3 { font-size: 1.1rem; color: var(--blue-dark); margin: 26px 0 8px; }
+.article-body p, .article-body li { line-height: 1.95; }
+.article-body ul, .article-body ol { padding-left: 1.4em; }
+.article-related {
+  margin: 40px 0 0;
+  background: var(--blue-light);
+  border-radius: 12px;
+  padding: 18px 22px;
+}
+.article-related p { margin: 0 0 8px; font-weight: bold; color: var(--blue-dark); }
+.article-related ul { margin: 0; }
+
+/* フッター（所在地・サイト内リンク） */
+.footer-inner { max-width: 900px; margin: 0 auto; text-align: left; }
+.footer-name { font-weight: bold; font-size: 1rem; color: #fff; margin: 0 0 6px; }
+.footer-nap { margin: 0 0 18px; line-height: 1.8; }
+.footer-nav ul { list-style: none; padding: 0; margin: 0 0 18px; display: flex; flex-wrap: wrap; gap: 6px 18px; }
+.footer-nav a { color: #dceaf9; text-decoration: none; }
+.footer-nav a:hover { text-decoration: underline; }
+.footer-copy { text-align: center; margin: 0; }
+footer a { color: #dceaf9; }

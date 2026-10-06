@@ -1,3 +1,6 @@
+# 注意：GitHub Pages のプロジェクトサイト（/unipath-hp/）では、このファイルは
+# https://unipathkk.github.io/robots.txt（ドメイン直下）ではないため、検索エンジンには読まれません。
+# サイトマップは Google Search Console から直接送信してください。
 User-agent: *
 Allow: /
 
