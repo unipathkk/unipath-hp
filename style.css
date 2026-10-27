@@ -491,6 +491,50 @@ footer {
   .summer-hero h1 { font-size: 1.6rem; }
 }
 
+/* ---------- Winter campaign page（夏期講習ページのスタイルを流用し、配色と対象別カードを追加） ---------- */
+.winter-hero {
+  background: repeating-linear-gradient(135deg, var(--blue-light), var(--blue-light) 22px, #fff 22px, #fff 44px);
+}
+.winter-hero .eyebrow { background: var(--blue-dark); }
+
+.target-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 30px;
+}
+.target-card {
+  background: var(--blue-light);
+  border-radius: 14px;
+  padding: 24px;
+  text-align: left;
+}
+.target-card.target-exam { background: var(--pink-light); }
+.target-label {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: #fff;
+  background: var(--blue);
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin: 0 0 10px;
+}
+.target-exam .target-label { background: var(--pink); }
+.target-card h3 { color: var(--blue-dark); margin-bottom: 8px; font-size: 1.15rem; }
+.target-card p:last-child { font-size: 0.92rem; margin: 0; }
+
+@media (max-width: 700px) {
+  .target-grid { grid-template-columns: 1fr; }
+}
+
+/* トップページの冬期講習バナー（.summer-banner を流用し配色のみ変更） */
+.winter-banner {
+  background: repeating-linear-gradient(135deg, var(--blue-light), var(--blue-light) 22px, #d6e8fa 22px, #d6e8fa 44px);
+}
+.winter-banner .banner-period { color: var(--blue-dark); }
+
 /* ---------- Support banner (index page) ---------- */
 .support-banner {
   display: flex;
