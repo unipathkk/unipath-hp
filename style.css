@@ -770,7 +770,7 @@ body.has-fixed-cta { padding-bottom: 66px; }
   padding: 12px 20px;
   text-align: left;
 }
-.brand-bar .brand-mark { text-decoration: none; }
+.brand-bar .brand-mark { text-decoration: none; flex-shrink: 0; }
 .brand-bar .brand-icon { width: 36px; height: 36px; }
 .brand-bar .brand-sub { font-size: 0.68rem; }
 .brand-bar .brand-main { font-size: 1.5rem; }
@@ -830,8 +830,8 @@ body.has-fixed-cta { padding-bottom: 66px; }
 }
 .site-nav .nav-list a.nav-cta:hover { background: #ffd766; }
 
-/* メニュー項目が横1列に収まらない幅（〜1499px）はハンバーガーメニューに切り替え */
-@media (max-width: 1499px) {
+/* メニュー項目が横1列に収まらない幅（〜1639px）はハンバーガーメニューに切り替え */
+@media (max-width: 1639px) {
   .nav-toggle { display: flex; }
   .site-nav {
     position: fixed;
@@ -1973,3 +1973,30 @@ footer a { color: #dceaf9; }
   .price-value-box, .price-apply-box { padding: 18px 16px; }
   .price-apply-box .hero-cta-row a { width: 100%; text-align: center; }
 }
+
+/* =========================================================
+   ユニパス訪問塾ページ（course/visit-tutoring/）
+   オンライン個別指導ページの部品を流用し、足りない部品だけ追加
+   ========================================================= */
+.visit-merit-grid { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); max-width: 640px; margin: 0 auto; }
+.visit-subject-grid .worry-card li { font-size: 0.93rem; }
+.visit-subject-grid .worry-card strong { color: var(--blue-dark); }
+.visit-price-points {
+  list-style: none;
+  padding: 0;
+  margin: 26px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+.visit-price-points li {
+  background: var(--blue-light);
+  color: var(--blue-dark);
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 6px 16px;
+  border-radius: 30px;
+}
+.visit-page .online-price .notes { max-width: 420px; margin-left: auto; margin-right: auto; }
+.visit-page .online-price .hero-cta-row .btn { margin-top: 0; }
