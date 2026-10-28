@@ -1641,6 +1641,17 @@ body.has-fixed-cta { padding-bottom: 66px; }
 .compare-grid-3 .compare-card { padding: 24px 20px; }
 .compare-grid-3 .compare-card h3 { font-size: 1.08rem; }
 
+/* コース紹介・コース比較（4コース：2列×2段、スマホは1列） */
+.course-preview-grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; max-width: 900px; margin-left: auto; margin-right: auto; }
+.course-preview-grid-4 .course-preview-card h3 { font-size: 1.12rem; }
+.course-preview-grid-4 .course-preview-card .cpc-body { padding: 20px 20px 24px; }
+.compare-grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; max-width: 900px; margin-left: auto; margin-right: auto; }
+.compare-grid-4 .compare-card { padding: 24px 20px; }
+.compare-grid-4 .compare-card h3 { font-size: 1.08rem; }
+@media (max-width: 700px) {
+  .course-preview-grid-4, .compare-grid-4 { grid-template-columns: 1fr; }
+}
+
 /* オンライン：理科の演示実験（差別化ポイント） */
 .online-tags li.online-tag-science { padding: 0; border-color: var(--green); background: var(--green); }
 .online-tags li.online-tag-science a { display: block; padding: 6px 16px; color: #fff; text-decoration: none; }
